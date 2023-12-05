@@ -90,7 +90,7 @@ function CourseList() {
         />
         <CourseItem
           courseCode='INF112'
-          courseName=''
+          courseName='Introduction to Systems Development'
           grade='Spring 2024'
         />
         <CourseItem

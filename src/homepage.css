@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  height: 6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,29 +45,34 @@ h1 {
 
 .signature {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
 }
 
 .navigationBar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #282c34;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
 }
 
 .navigationBar a {
+  font-family: Courier New;
+  font-size: 20px;
   float: left;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  height: 100%;
 }
 
 /* Change color on hover */
 .navigationBar a:hover {
   background-color: #ddd;
   color: black;
+  line-height: 100%;
 }
 
 /* Active/current link */
@@ -139,12 +144,70 @@ body {
   width: 280px;
 }
 
+.profilepicture {
+  width: 350px; /* Set your desired width */
+  height: 400px; /* Set your desired height */
+  border-radius: 15%; /* This will create a circular shape (rounded corners) */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  display: block;
+  margin: auto; /* Center the image horizontally */
+  position: relative;
+}
+
 .footer {
   padding: 5px;
   text-align: center;
-  background: #ddd;
+  background: white;
+}
+
+.textbox {
+  width: 500px; /* Set your desired width */
+  padding: 10px; /* Set your desired padding */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 15px; /* Rounded corners */
+  outline: none; /* Remove default input focus outline */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-size: 16px; /* Set your desired font size */
+  position: relative;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  display: block;
+  margin: auto; /* Center the text horizontally */
+}
+
+/* Optional: Add hover and focus styles for a subtle effect */
+.textbox:hover,
+.textbox:focus {
+  border-color: #666; /* Border color on hover/focus */
 }
 
 .course {
   color:#282c34;
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
