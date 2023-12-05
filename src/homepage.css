@@ -140,7 +140,11 @@ body {
 }
 
 .footer {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   background: #ddd;
+}
+
+.course {
+  color:#282c34;
 }
