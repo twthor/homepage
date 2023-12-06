@@ -14,14 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2C2C54;
   height: 6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -40,37 +39,42 @@
 /* her starter mitt */
 
 h1 {
-  color: greenyellow;
+  color: #474787;
 }
 
 .signature {
   font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
+  color:#AAABB8;
 }
 
 .navigationBar {
   overflow: hidden;
-  background-color: #282c34;
+  background: linear-gradient(to bottom, #2C2C54, #2C2C54 95%, #141432);
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  font-weight: bold;
 }
 
 .navigationBar a {
   font-family: Courier New;
   font-size: 20px;
+  font-weight: bold;
   float: left;
   display: block;
-  color: white;
+  color: #AAABB8;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   height: 100%;
+  background: linear-gradient(to bottom, #2C2C54, #2C2C54 95%, #141432);
 }
+
 
 /* Change color on hover */
 .navigationBar a:hover {
-  background-color: #ddd;
+  background-color: #AAABB8;
   color: black;
   line-height: 100%;
 }
@@ -80,6 +84,25 @@ h1 {
   background-color: #666;
   color: white;
 }
+
+/* Default link styles */
+a {
+  color: black; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect */
+a:hover {
+  color: #2C2C54; /* Change color on hover */
+  border-bottom: 1px solid black; /* Thin line on the right side */
+}
+
+/* Active link styles (when clicked) */
+a:active {
+  color: #ff9900; /* Active link color */
+}
+
 
 /* Responsive layout - when the screen is less than 400px wide, 
 make the navigation links stack on top of each other instead of next to each other */
@@ -101,6 +124,7 @@ make the two columns stack on top of each other instead of next to each other */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #ECECEC;
 }
 
 * {
@@ -113,6 +137,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+  flex: 1;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -120,17 +145,52 @@ body {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #ECECEC;
   padding: 20px;
+  border-right: 1px solid #ddd; /* Thin line on the right side */
 }
 
 /* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: white;
+  background-color: #ECECEC;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.displayWindows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subWindow {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 10px;
+  background-color: #6c63ff; /* Purple color */
+  color: #333; /* Grey color */
+  font-size: 2.5em; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Optional: Add hover effect */
+  &:hover {
+    background-color: #524ccc; /* Darker purple on hover */
+    color: #fff; /* White color on hover */
+  }
+}
+
 
 /* Fake image, just for this example */
 .fakeimg {
@@ -151,13 +211,16 @@ body {
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
   display: block;
   margin: auto; /* Center the image horizontally */
-  position: relative;
+  /* position: relative; */
 }
 
 .footer {
   padding: 5px;
   text-align: center;
-  background: white;
+  background: #ECECEC;
+  color: #2C2C54;
+  bottom: 0%;
+  width: 100%;
 }
 
 .textbox {
@@ -184,30 +247,4 @@ body {
   color:#282c34;
 }
 
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
 
