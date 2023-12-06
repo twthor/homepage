@@ -4,28 +4,21 @@ import EducationWindow from 'components/EducationWindow';
 import CourseWindow from 'components/CourseWindow';
 import ProjectWindow from 'components/ProjectWindow';
 import WorkExperienceWindow from 'components/WorkExperienceWindow';
-import NavigationBar from 'components/NavigationBar';
-import Header from 'components/Header';
 import AboutMe from 'components/AboutMe';
+import ContactMe from 'components/ContactMe';
+import Header from 'components/Header';
 import Footer from 'components/Footer';
 
-
 function App() {
-  
   return (
     <div>
-      <div class="container">
-        <Header />
-      </div>
+      <Header />
       <body>
-        <NavigationBar />
+        {/* <NavigationBar /> */}
         <div class="row">
           <div class="side">
             <AboutMe />
-            <h3>Universities:</h3>
-            <a href="https://www.uib.no/studier/BAMN-DSIK">Univeristy of Bergen - My bachelor degree</a>
-            <p></p>
-            <a href="https://www.uio.no/studier/program/informasjonssikkerhet-master/">Univeristy of Oslo - planned master's degree</a>
+            <ContactMe />
           </div>
           <div class="main">
             <div class="displayWindows">

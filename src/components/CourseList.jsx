@@ -20,7 +20,7 @@ function CourseList() {
         />
         <CourseItem
           courseCode='MAT101'
-          courseName='Basic course in Maths'
+          courseName='Elementary calculus I'
           grade='Passed'
         />
         <CourseItem
