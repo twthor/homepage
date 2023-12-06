@@ -5,7 +5,7 @@ function ProjectItem({ link, projectTitle, projectDescription, pictureSrc }) {
         <div class="projectLink">
             <a href={link}>
                 <p class="companyName">{projectTitle}</p>
-                    <img src={pictureSrc} alt="illustrational" class="image"/>
+                <img src={pictureSrc} alt="illustrational" class="image"/>
             </a>
             <br></br>
             {projectDescription}

@@ -14,7 +14,6 @@ function App() {
     <div>
       <Header />
       <body>
-        {/* <NavigationBar /> */}
         <div class="row">
           <div class="side">
             <AboutMe />
