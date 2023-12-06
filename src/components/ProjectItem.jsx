@@ -1,8 +1,15 @@
 import React from "react";
 
-function ProjectItem() {
+function ProjectItem({ link, projectTitle, projectDescription, pictureSrc }) {
     return (
-        <div>TBC</div>
+        <div class="projectLink">
+            <a href={link}>
+                <p class="companyName">{projectTitle}</p>
+                    <img src={pictureSrc} alt="illustrational" />
+            </a>
+            <br></br>
+            {projectDescription}
+        </div>
     );
 }
 

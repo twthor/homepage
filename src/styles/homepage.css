@@ -21,6 +21,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  margin: 10px;
+}
+
+.container {
+  background-color: #2C2C54; /* Your desired background color */
+  padding: 10px; /* Adjust padding as needed */
 }
 
 .App-link {
@@ -51,7 +57,7 @@ h1 {
 .navigationBar {
   overflow: hidden;
   background: linear-gradient(to bottom, #2C2C54, #2C2C54 95%, #141432);
-  position: sticky;
+  /* position: sticky; */
   position: -webkit-sticky;
   top: 0;
   font-weight: bold;
@@ -100,8 +106,21 @@ a:hover {
 
 /* Active link styles (when clicked) */
 a:active {
-  color: #ff9900; /* Active link color */
+  color: #0b0721; /* Active link color */
 }
+
+.projectLink {
+  color: gray;
+  background-color: #2C2C54;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: #141432; /* Darker purple on hover */
+    color: #6c63ff; /* White color on hover */
+  }
+}
+
 
 
 /* Responsive layout - when the screen is less than 400px wide, 
@@ -148,6 +167,7 @@ body {
   background-color: #ECECEC;
   padding: 20px;
   border-right: 1px solid #ddd; /* Thin line on the right side */
+  position: relative;
 }
 
 /* Main column */
@@ -190,7 +210,6 @@ body {
     color: #fff; /* White color on hover */
   }
 }
-
 
 /* Fake image, just for this example */
 .fakeimg {
@@ -235,6 +254,7 @@ body {
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
   display: block;
   margin: auto; /* Center the text horizontally */
+  background-color: #2C2C54;
 }
 
 /* Optional: Add hover and focus styles for a subtle effect */
@@ -247,4 +267,26 @@ body {
   color:#282c34;
 }
 
+.experienceItem {
+  background-color: #2C2C54;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
+.companyName {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6c63ff; /* Purple color */
+}
+
+.dateRange {
+  font-size: 1.2em;
+  color: #6c63ff; /* Purple color */
+}
+
+.jobDescription {
+  margin-top: 10px;
+  color: gray; /* Black color for job description */
+}

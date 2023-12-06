@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import ProjectItem from "./ProjectItem";
+import Projects from "./Project";
 
 function ProjectWindow() {
     const [show, setShow] = useState(false);
     return (
         <div align="center">
             <button class="subWindow" type="button" onClick={() => setShow(!show)}>Projects</button>
-            {show && <ProjectItem />}
+            {show && <Projects />}
         </div>
     );
 }
