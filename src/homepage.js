@@ -9,7 +9,9 @@ import ContactMe from 'components/ContactMe';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
+
 function App() {
+  
   return (
     <div>
       <Header />
@@ -32,7 +34,7 @@ function App() {
           </div>
         </div>
       </body>
-      <Footer footerText='Made by Tobias With Thorsen'/>
+      <Footer footerText=' Tobias With Thorsen. All rights reserved.'/>
     </div>
   );
 }

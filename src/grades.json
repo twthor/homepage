@@ -1,0 +1,92 @@
+[
+    {
+        "coursecode":"INF100",
+        "course_name":"Introduction to programming",
+        "grade":"A"
+    },
+    {
+        "coursecode":"INF140",
+        "course_name":"Introduction to Cyber Security",
+        "grade":"A"
+    },
+    {
+        "coursecode":"MAT101",
+        "course_name":"Elementary Calculus I",
+        "grade":"Passed"
+    },
+    {
+        "coursecode":"INF101",
+        "course_name":"Object oriented programming",
+        "grade":"A" 
+    },
+    {
+        "coursecode":"INF142",
+        "course_name":"Computer networks",
+        "grade":"A"
+    }, 
+    {
+        "coursecode":"MNF130",
+        "course_name":"Discrete Structures",
+        "grade":"C" 
+    }, 
+    {
+        "coursecode":"INF102",
+        "course_name":"Algorithms, data structures and programming",
+        "grade":"B" 
+    }, 
+    {
+        "coursecode":"INF113",
+        "course_name":"Introduction to operating systems",
+        "grade":"A" 
+    }, 
+    {
+        "coursecode":"STAT110",
+        "course_name":"Basic course in Statistics",
+        "grade":"C" 
+    }, 
+    {
+        "coursecode":"INF143A",
+        "course_name":"Applied Cryptography",
+        "grade":"A"
+    }, 
+    {
+        "coursecode":"INF115",
+        "course_name":"Databases and modelling",
+        "grade":"A" 
+    }, 
+    {
+        "coursecode":"MAT121",
+        "course_name":"Linear Algebra",
+        "grade":"B" 
+    }, 
+    {
+        "coursecode":"INF226",
+        "course_name":"Software Security",
+        "grade":"Waiting for results.." 
+    }, 
+    {
+        "coursecode":"INF214",
+        "course_name":"Concurrent Programming",
+        "grade":"Waiting for results.." 
+    }, 
+    {
+        "coursecode":"EXPHIL-MN",
+        "course_name":"Examen philosophicum",
+        "grade":"Waiting for results.."
+    }, 
+    {
+        "coursecode":"INF249",
+        "course_name":"Advanced Cyber Security",
+        "grade":"Spring 2024" 
+    }, 
+    {
+        "coursecode":"INF112",
+        "course_name":"Introduction to Systems Development",
+        "grade":"Spring 2024" 
+    }, 
+    {
+        "coursecode":"?",
+        "course_name":"?",
+        "grade":"Spring 2024" 
+    }
+]
