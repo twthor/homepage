@@ -1,5 +1,4 @@
 import React from "react";
-import NavigationBar from "./NavigationBar";
 
 function Header() {
     return (
@@ -7,7 +6,7 @@ function Header() {
         <meta charset="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>Tobias With Thorsen</title>
-        <NavigationBar />
+        <h1 class="signature" align="center">Tobias With Thorsen</h1>
     </head>
     );
 }

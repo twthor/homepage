@@ -7,8 +7,4 @@ export const COLUMNS = [
     Header: "Course Name",
     accessor: "course_name",
   },
-  {
-    Header: "Grade",
-    accessor: "grade",
-  },
 ];

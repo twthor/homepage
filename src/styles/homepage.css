@@ -80,14 +80,42 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
   color:#AAABB8;
+  margin-top: 10vh;
 }
 
 .navigationBar {
   overflow: hidden;
   /* background: linear-gradient(to bottom, #2C2C54, #2C2C54 95%, #141432); // underline fade effect */
-  position: -webkit-sticky;
-  top: 0;
+  position: fixed;
+  top: 0px; /* Adjust this value to match the height of the header. */
+  width: 100%;
   font-weight: bold;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C2C54;
+  z-index: 1000; /* Ensure it's above other elements */
+  margin: 0;
+  padding: 0;
+}
+
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media screen and (max-width: 600px) {
+  .navigationBar {
+    height: auto;
+    top: 0px;
+    background-color: #2C2C54;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .signature {
+    margin-top: 10vh;
+  }
 }
 
 .navigationBar a {
@@ -99,9 +127,9 @@ h1 {
   color: #AAABB8;
   text-align: center;
   padding: 14px 20px;
+  margin: 0px;
   text-decoration: none;
-  height: 100%;
-  background: linear-gradient(to bottom, #2C2C54, #2C2C54 95%, #141432);
+  background: linear-gradient(to bottom, #2C2C54, #2C2C54 100%, #141432);
 }
 
 
