@@ -117,7 +117,9 @@ h1 {
     margin-top: 12vh;
   }
 
-
+  .row {   
+    flex-direction: column;
+  }
 }
 
 .navigationBar a {
@@ -193,12 +195,48 @@ a:active {
 }
 
 
+
 /* Responsive layout - when the screen is less than 400px wide, 
 make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .main > * {
+    margin: 10px 0; /* Adjust margin for smaller screens */
+    position: initial; /* Reset position for smaller screens */
+  }
+
   .navigationBar a {
     float: none;
     width: 100%;
+  }
+
+  .row {   
+    flex-direction: column;
+  }
+
+  .jobDescription {
+    width: 100%;
+  }
+
+  .experienceItem {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .textbox {
+    width: 100%; /* Full width for smaller screens */
+    padding: 0; /* Adjust as needed */
+    margin: 0; /* Adjust as needed */
+  }
+
+  .displayWindows {
+    align-items: center;
   }
 }
 
@@ -207,10 +245,6 @@ make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
-  }
-
-  .textbox {
-    width: 100%;
   }
 }
 
@@ -320,7 +354,7 @@ body {
 }
 
 .textbox {
-  width: 500px; /* Set your desired width */
+  width: 100%; /* Set your desired width */
   padding: 10px; /* Set your desired padding */
   border: 1px solid #ccc; /* Border color */
   border-radius: 15px; /* Rounded corners */
@@ -350,6 +384,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .companyName {
@@ -366,4 +401,5 @@ body {
 .jobDescription {
   margin-top: 10px;
   color: gray; /* Black color for job description */
+  width: 100%;
 }
