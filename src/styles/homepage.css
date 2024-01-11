@@ -159,7 +159,7 @@ a {
 
 /* Hover effect */
 a:hover {
-  color: #e7e7ec; /* Change color on hover */
+  color: #e7e7ec  ; /* Change color on hover */
   border-bottom: 1px solid black; /* Thin line on the right side */
 }
 
