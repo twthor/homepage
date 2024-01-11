@@ -3,6 +3,7 @@ import LinkedInIcon from "./LinkedInIcon";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+
 function NavigationBar() {
     return (
         <div class="navigationBar">
@@ -13,7 +14,7 @@ function NavigationBar() {
           <LinkedInIcon profileUrl='https://linkedin.com/in/tobiaswiththorsen' />
           <a href="https://www.uib.no/studier/BAMN-DSIK">UiB</a>
           <a href="https://www.uio.no/studier/program/informasjonssikkerhet-master/">UiO</a>
-          <a href="pictures/CV - Tobias With Thorsen.pdf" download class="btn">CV ⬇️</a>
+          <a href={require('pictures/CV.pdf')} download="CV.pdf">CV </a>
         </div>
     );
 }
