@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function NavigationBar() {
     return (
         <div class="navigationBar">
-          <a href="http://localhost:3000">Home</a>
+          <a href="https://tobiasthorsen.no">Home</a>
           <a href="https://github.com/twthor?tab=repositories">
             <FontAwesomeIcon icon={faGithub}  />
           </a>
