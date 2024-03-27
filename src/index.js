@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './homepage';
 import reportWebVitals from './reportWebVitals';
-import { initializeApp } from 'firebase/app';
+// import { initializeApp } from 'firebase/app';
 
-const firebaseApp = initializeApp( {
-  apiKey: "AIzaSyByvEIBxkc1HqQ_x-bjlkRcFqyo8VJBZ8I",
-  authDomain: "homepage-twthor.firebaseapp.com",
-  projectId: "homepage-twthor",
-  storageBucket: "homepage-twthor.appspot.com",
-  messagingSenderId: "856850452766",
-  appId: "1:856850452766:web:edd89ff65fe1c7188a790f"
-});
+// // const firebaseApp = initializeApp( {
+// //   apiKey: "AIzaSyByvEIBxkc1HqQ_x-bjlkRcFqyo8VJBZ8I",
+// //   authDomain: "homepage-twthor.firebaseapp.com",
+// //   projectId: "homepage-twthor",
+// //   storageBucket: "homepage-twthor.appspot.com",
+// //   messagingSenderId: "856850452766",
+// //   appId: "1:856850452766:web:edd89ff65fe1c7188a790f"
+// // });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

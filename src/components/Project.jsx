@@ -8,7 +8,7 @@ import websiteCodeImg from "pictures/codefromwebsite.jpg"
 function Projects() {
     return (
         <div>
-            <ProjectItem link={"https://github.com/twthor/WebScraping"} projectTitle={"Web Scraping"} projectDescription={"Wanted to web scrape current stock prices and add them to my Google spreadsheet."} pictureSrc={webscrapingimg}/>
+            <ProjectItem link={"https://github.com/twthor/WebScraping"} projectTitle={"Web Scraping"} projectDescription={"Wanted to get the current price of stocks to add them to my Google spreadsheet."} pictureSrc={webscrapingimg}/>
             <ProjectItem link={"https://github.com/twthor/homepage"} projectTitle={"This website"} projectDescription={"Made myself a homepage using React. Both to learn some React and to have a resume available at all times 😄."} pictureSrc={websiteCodeImg}/>
         </div>
     );

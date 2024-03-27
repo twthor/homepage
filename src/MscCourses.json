@@ -1,0 +1,38 @@
+[
+    {
+        "coursecode":"IN4210",
+        "course_name":"Network and Communications Security"
+    },
+    {
+        "coursecode":"TEK5520",
+        "course_name":"Cybersikkerhet i industrielle systemer"
+    },
+    {
+        "coursecode":"IN5290",
+        "course_name":"Ethical Hacking"
+    },
+    {
+        "coursecode":"IN4180",
+        "course_name":"Cyber Operations"
+    },
+    {
+        "coursecode":"xxx",
+        "course_name":"Valgfritt masteremne"
+    }, 
+    {
+        "coursecode":"xxx",
+        "course_name":"Valgfritt masteremne"
+    }, 
+    {
+        "coursecode":"10p",
+        "course_name":"Masteroppgave"
+    }, 
+    {
+        "coursecode":"20p",
+        "course_name":"Masteroppgave"
+    }, 
+    {
+        "coursecode":"30p",
+        "course_name":"Masteroppgave"
+    }
+]

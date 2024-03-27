@@ -3,7 +3,7 @@ import { COLUMNS } from "../column";
 import { useTable, useSortBy, useGlobalFilter } from "react-table";
 import { GlobalFilter } from "./GlobalFilter";
 
-const Table = ({ tableData }) => {
+const Table = ({ tableData, title }) => {
   const columns = useMemo(() => COLUMNS, []); // memoize before adding to useTable hook
   const data = useMemo(() => [...tableData], [tableData]);
 
@@ -18,6 +18,7 @@ const Table = ({ tableData }) => {
 
   return (
     <>
+      <h3>{title}</h3>
       {/* apply the table props */}
       <GlobalFilter globalFilter={globalFilter} setGlobalFilter={setGlobalFilter} />
       <table {...getTableProps()}>
