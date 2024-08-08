@@ -4,16 +4,16 @@
         "course_name":"Network and Communications Security"
     },
     {
-        "coursecode":"TEK5520",
-        "course_name":"Cyber Security of Industrial Systems"
+        "coursecode":"TEK5510",
+        "course_name":"Security in Operating Systems and Software"
     },
     {
         "coursecode":"IN5290",
         "course_name":"Ethical Hacking"
     },
     {
-        "coursecode":"IN4180",
-        "course_name":"Cyber Operations"
+        "coursecode":"xxx",
+        "course_name":"Valgfritt masteremne"
     },
     {
         "coursecode":"xxx",

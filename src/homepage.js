@@ -9,32 +9,26 @@ import ContactMe from 'components/ContactMe';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import NavigationBar from 'components/NavigationBar';
+import URLs from 'components/URLs';
 
 function App() {
   
   return (
-    <div>
+    <div className='body'>
       <Header />
-      <body>
       <NavigationBar />
-        <div class="row">
-          <div class="side">
-            <AboutMe />
-            <ContactMe />
-          </div>
-          <div class="main">
-            <div class="displayWindows">
-              <ProjectWindow />
-              <br></br>
-              <WorkExperienceWindow />
-              <br></br>
-              <EducationWindow />
-              <br></br>
-              <CourseWindow />
-            </div>
-          </div>
+      <URLs></URLs>
+      <AboutMe />
+        <div class="displayWindows">
+          <ProjectWindow />
+          <br></br>
+          <WorkExperienceWindow />
+          <br></br>
+          <EducationWindow /> 
+          <br></br>
+          <CourseWindow />
         </div>
-      </body>
+      <ContactMe />
       <Footer footerText=' Tobias With Thorsen. All rights reserved.'/>
     </div>
   );

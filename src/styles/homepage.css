@@ -23,15 +23,20 @@
   font-size: calc(10px + 2vmin);
 }
 
+.body {
+  background-color: #29272f;
+  padding-top: 60px;
+}
+
 .container {
-  background-color: #2C2C54; /* Your desired background color */
+  background-color: #393947; /* Your desired background color */
   padding: 40px; /* Adjust padding as needed */
   border-radius: 10px;
   width: 500px;
   display: flex;
   align-items: center;
   margin: 3rem 0;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 table {
@@ -45,7 +50,7 @@ tr:last-child > td {
 
 th,
 td {
-  color: #6c63ff;
+  color: #c70c1b;
   font-weight: bold;
   margin: 0;
   padding: 0.5rem;
@@ -72,12 +77,16 @@ td:last-child {
 
 /* her starter mitt */
 
-h1 {
-  color: #474787;
+h1, h2 {
+  color: #c70c1b;
 }
 
 h3 {
-  color:#6c63ff;
+  color:#c70c1b;
+}
+
+h4 {
+  color:#c70c1b;
 }
 
 .signature {
@@ -87,22 +96,156 @@ h3 {
   margin-top: 10vh;
 }
 
+.urls {
+  position: fixed; /* Keeps the URLs fixed on the page */
+  right: 0; /* Aligns the container to the right side */
+  top: 50%; /* Vertically centers the container */
+  transform: translateY(-50%); /* Adjusts position to be perfectly centered */
+  display: flex;
+  flex-direction: column; /* Stacks the links vertically */
+  align-items: center; /* Centers the links horizontally within the container */
+  padding-right: 10px; /* Adds some space between the links and the vertical line */
+  font-weight: bold;
+  z-index: 9999; /* High z-index to ensure it stays on top of other elements */
+}
+
+.urls::after {
+  content: ''; /* Creates a pseudo-element for the vertical line */
+  position: absolute;
+  right: 0; /* Aligns the line to the right edge of the container */
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Adjusts the thickness of the vertical line */
+  background-color: #333; /* Sets the color of the vertical line */
+}
+
+.urls a {
+  margin: 10px 0; /* Adds space between each link */
+  color: white; /* Sets the color of the links */
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  font-size: 20px;
+}
+
+.urls a:hover {
+  color: #ff0000; /* Changes link color on hover */
+}
+
+
 .navigationBar {
   overflow: hidden;
-  /* background: linear-gradient(to bottom, #2C2C54, #2C2C54 95%, #141432); // underline fade effect */
   position: fixed;
-  top: 0px; /* Adjust this value to match the height of the header. */
-  width: 100%;
+  top: 0; 
+  width: 100%; /* Adjust width as needed */
   font-weight: bold;
-  align-items: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2C2C54;
+  flex-direction: row; /* Stack items vertically */
+  justify-content: flex-end; /* Align items to start at the top */
+  background-color: #29272f;
   z-index: 1000; /* Ensure it's above other elements */
-  margin: 0;
-  padding: 0;
+  padding: 10px 20px;
 }
+
+.navigationBar a {
+  font-family: Courier New;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  display: block;
+  color: #AAABB8;
+  text-align: center;
+  padding: 14px 20px;
+  margin: 0px;
+  text-decoration: none;
+  background: #29272f;
+}
+
+
+/* Change color on hover */
+.navigationBar a:hover {
+  background-color: #c70c1b;
+  color: black;
+  line-height: 100%;
+}
+
+/* Active/current link */
+.navigationBar a.active {
+  background-color: #6c63ff;
+  color: white;
+}
+
+/* Default link styles */
+a {
+  color: #e7e7ec; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect */
+a:hover {
+  color: #e7e7ec  ; /* Change color on hover */
+  border-bottom: 1px solid black; /* Thin line on the right side */
+}
+
+/* Active link styles (when clicked) */
+a:active {
+  color: #0b0721; /* Active link color */
+}
+
+/******************************
+ABOUT ME - section
+******************************/
+.aboutme-container {
+  display: flex;
+  align-items: center; /* Align items at the top */
+  justify-content: center;
+  padding: 20px;
+  background-color: #29272f; /* Dark background to contrast with the text */
+  color: white;
+  text-align: left;
+  padding-left: 500px;
+}
+
+.aboutme-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+h3 {
+  color: red; /* Set h3 text to red */
+  margin: 0;
+  line-height: 1.4; /* Adjust line height for better spacing */
+}
+
+.aboutme-header {
+  font-size: 2.5em; /* Slightly smaller font size for balance */
+  color: white;
+  margin: 5px 0; /* Adjust margin for spacing */
+  line-height: 1.2; /* Adjust line height */
+}
+
+.aboutme-textbox {
+  margin-top: 20px;
+  background-color: #29272f;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.aboutme-picture {
+  flex: 0 0 1000px; /* Adjust the width of the picture section */
+  text-align: center;
+}
+
+.profilepicture {
+  width: 100%;
+  border-radius: 10%; /* Rounded corners */
+  object-fit: cover;
+}
+
+
+
 
 /* Media query for smaller screens (adjust the max-width as needed) */
 @media screen and (max-width: 600px) {
@@ -126,51 +269,7 @@ h3 {
   }
 }
 
-.navigationBar a {
-  font-family: Courier New;
-  font-size: 20px;
-  font-weight: bold;
-  float: left;
-  display: block;
-  color: #AAABB8;
-  text-align: center;
-  padding: 14px 20px;
-  margin: 0px;
-  text-decoration: none;
-  background: linear-gradient(to bottom, #2C2C54, #2C2C54 100%, #141432);
-}
 
-
-/* Change color on hover */
-.navigationBar a:hover {
-  background-color: #AAABB8;
-  color: black;
-  line-height: 100%;
-}
-
-/* Active/current link */
-.navigationBar a.active {
-  background-color: #666;
-  color: white;
-}
-
-/* Default link styles */
-a {
-  color: grey; /* Link color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-/* Hover effect */
-a:hover {
-  color: #e7e7ec  ; /* Change color on hover */
-  border-bottom: 1px solid black; /* Thin line on the right side */
-}
-
-/* Active link styles (when clicked) */
-a:active {
-  color: #0b0721; /* Active link color */
-}
 
 .phone {
   color: grey;
@@ -182,20 +281,20 @@ a:active {
 
 .projectLink {
   color: gray;
-  background-color: #2C2C54;
+  background-color: #393947;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
   &:hover {
-    background-color: #141432; /* Darker purple on hover */
-    color: #6c63ff; /* White color on hover */
+    background-color: #4c4c5b; /* Darker purple on hover */
+    color: #971e28; /* White color on hover */
   }
 }
 
 .search {
   width: 200px; /* Set your desired width */
   margin: 10px; /* Add some margin for spacing */
-  color: #6c63ff; /* Grey text color */
+  color: #4c4c5b; /* Grey text color */
 }
 
 
@@ -255,7 +354,7 @@ make the two columns stack on top of each other instead of next to each other */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #ECECEC;
+  background-color: #29272f;
 }
 
 * {
@@ -283,7 +382,7 @@ body {
 /* Main column */
 .main {   
   flex: 1; 
-  background-color: #ECECEC;
+  background-color: #971e28;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -308,7 +407,7 @@ body {
   display: inline-block;
   padding: 8px 16px;
   margin: 10px;
-  background-color: #6c63ff; /* Purple color */
+  background-color: #7d1414; /* Purple color */
   color: #333; /* Grey color */
   font-size: 2.5em; /* Adjust the font size as needed */
   font-weight: bold;
@@ -321,7 +420,7 @@ body {
 
   /* Optional: Add hover effect */
   &:hover {
-    background-color: #524ccc; /* Darker purple on hover */
+    background-color: #4c4c5b; /* Darker purple on hover */
     color: #fff; /* White color on hover */
   }
 }
@@ -336,6 +435,7 @@ body {
   width: 280px;
 }
 
+
 .profilepicture {
   width: 350px; /* Set your desired width */
   height: 400px; /* Set your desired height */
@@ -349,18 +449,22 @@ body {
 .footer {
   padding: 5px;
   text-align: center;
-  background: #ECECEC;
-  color: #2C2C54;
-  bottom: 0%;
+  background: #29272f;
+  color: #4c4c5b;
+  bottom: 100%;
   width: 100%;
   font-size: small;
   opacity: 50%;
 }
 
+.contactme {
+  bottom: 0;
+  text-align: center;
+}
+
 .textbox {
   width: 100%; /* Set your desired width */
   padding: 10px; /* Set your desired padding */
-  border: 1px solid #ccc; /* Border color */
   border-radius: 15px; /* Rounded corners */
   outline: none; /* Remove default input focus outline */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -369,32 +473,37 @@ body {
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
   display: block;
   margin: auto; /* Center the text horizontally */
-  background-color: #2C2C54;
+  background-color: #29272f;
 }
 
 /* Optional: Add hover and focus styles for a subtle effect */
 .textbox:hover,
 .textbox:focus {
-  border-color: #666; /* Border color on hover/focus */
+  border-color: #4c4c5b; /* Border color on hover/focus */
 }
 
 .course {
-  color:#282c34;
+  color:#971e28;
 }
 
 .experienceItem {
-  background-color: #2C2C54;
-  color: #FFFFFF;
+  background-color: #393947;
+  color: #393947;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 5px;
-  width: 100%;
+  width: 50%;
+
+  &:hover {
+    background-color: #4c4c5b; /* Darker purple on hover */
+    color: #fff; /* White color on hover */
+  }
 }
 
 .companyName {
   font-size: 1.5em;
   font-weight: bold;
-  color: #6c63ff; /* Purple color */
+  color: #971e28; /* Purple color */
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -402,17 +511,17 @@ body {
 .underheadline {
   font-size: 1em;
   font-weight: bold;
-  color: #6c63ff; /* Purple color */
+  color: #971e28; /* Purple color */
   margin: 0;
 }
 
 .dateRange {
   font-size: 1.2em;
-  color: #6c63ff; /* Purple color */
+  color: #971e28; /* Purple color */
 }
 
 .jobDescription {
   margin-top: 10px;
-  color: gray; /* Black color for job description */
-  width: 100%;
+  color: white; /* Black color for job description */
+  width: 60%;
 }
