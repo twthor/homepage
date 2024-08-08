@@ -7,9 +7,8 @@ function EducationItem() {
                 <h4 class="companyName">Bachelor's degree in Informatics: Computer Security @ University of Bergen</h4>
                 <h6 class="underheadline">2021-2024</h6>
                 <p class="jobDescription">
-                    This is an Informatics/computer science degree, but with specilization in Cyber Security.
-                    With this degree we are both prepared to do work in development and with cyber security related matters,
-                    making it a versatile degree. 
+                This is an Informatics/Computer Science degree with a specialization in Cybersecurity. 
+                With this degree, we are prepared to work in both development and cybersecurity-related matters, making it a versatile qualification.
                 </p>
             </div>
             <div class="experienceItem">
